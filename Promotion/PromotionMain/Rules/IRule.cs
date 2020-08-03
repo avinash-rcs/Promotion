@@ -9,5 +9,7 @@ namespace PromotionMain.Rules
         bool IsApplicable(List<char> cart);
 
         List<char> Apply(List<char> cart);
+
+        string getPrettyMessage();
     }
 }

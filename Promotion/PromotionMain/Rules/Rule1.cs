@@ -9,11 +9,14 @@ namespace PromotionMain.Rules
     {
         char _skutype;
         int n;
+
+        int _offerPrice;
         // Instatiantes this rule with set parameters of n and SKU type
-        public Rule1(char SKUtype,int n)
+        public Rule1(char SKUtype,int n,int offerPrice)
         {
             this._skutype=SKUtype;
             this.n = n;
+            this._offerPrice = offerPrice;
         }
         public bool IsApplicable(List<char> cart)
         {
@@ -38,6 +41,11 @@ namespace PromotionMain.Rules
                 newcart.Add(item);
             }
             return newcart;
+        }
+
+        public string getPrettyMessage()
+        {
+            return "Rule Applied: " + n +_skutype+" for " + _offerPrice;
         }
     }
 }

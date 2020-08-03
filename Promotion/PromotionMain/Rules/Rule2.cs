@@ -10,11 +10,14 @@ namespace PromotionMain.Rules
         char _skutype1;
         char _skutype2;
 
+        int _offerPrice;
+
         // when SKUtype1 and SKU type2 are bought together it is at the offer price
-        public Rule2(char SKUtype1, char SKUtype2)
+        public Rule2(char SKUtype1, char SKUtype2,int offerPrice)
         {
             this._skutype1=SKUtype1;
             this._skutype2=SKUtype2;
+            this._offerPrice = offerPrice;
         }
 
         public bool IsApplicable(List<char> cart)
@@ -45,6 +48,11 @@ namespace PromotionMain.Rules
                 newcart.Add(item);
             }
             return newcart;
+        }
+
+        public string getPrettyMessage()
+        {
+            return "Rule Applied: (" + _skutype1+" + "+_skutype2+") for " + _offerPrice;
         }
     }
 }
