@@ -14,13 +14,17 @@ namespace PromotionMain
 
         static void Main(string[] args)
         {
+            //Intialize
             fixedSKUs = PopulateSKUs();
             IntializeScenario();
 
             var cart = initialCart;
             Console.WriteLine("Promotion rules applied: ");
+            
+            //Apply all rules
             foreach(var rule in rules)
             {
+                //Apply each rule repeatedly
                 while(rule.IsApplicable(cart))
                 {
                     cart = rule.Apply(cart);
@@ -28,6 +32,7 @@ namespace PromotionMain
                 }
             }
 
+            // Print out the items that didn't belong to any rule
             Console.WriteLine();
             Console.WriteLine("Individual Items");
             foreach(var item in cart)
@@ -37,6 +42,7 @@ namespace PromotionMain
 
         }
 
+        // present the available SKUs here
         public static List<SKU> PopulateSKUs()
         {
             List<SKU> list = new List<SKU>();
@@ -48,6 +54,8 @@ namespace PromotionMain
             return list;
         }
 
+
+        //write values here for different scenarios
         public static void IntializeScenario()
         {
             rules = new List<IRule>();

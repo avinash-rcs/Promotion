@@ -8,6 +8,7 @@ namespace Promotion.Tests
 {
     public class ProgramTest
     {
+        // This test is not of importance; Can change if SKU list changes
         [Fact]
         public void Check_if_intial_population_of_SKUs_Work()
         {
