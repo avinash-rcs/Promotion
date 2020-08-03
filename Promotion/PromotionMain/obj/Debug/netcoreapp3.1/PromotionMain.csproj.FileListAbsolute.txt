@@ -1,0 +1,13 @@
+/home/avinash/code/project1/Promotion/PromotionMain/bin/Debug/netcoreapp3.1/PromotionMain
+/home/avinash/code/project1/Promotion/PromotionMain/bin/Debug/netcoreapp3.1/PromotionMain.deps.json
+/home/avinash/code/project1/Promotion/PromotionMain/bin/Debug/netcoreapp3.1/PromotionMain.runtimeconfig.json
+/home/avinash/code/project1/Promotion/PromotionMain/bin/Debug/netcoreapp3.1/PromotionMain.runtimeconfig.dev.json
+/home/avinash/code/project1/Promotion/PromotionMain/bin/Debug/netcoreapp3.1/PromotionMain.dll
+/home/avinash/code/project1/Promotion/PromotionMain/bin/Debug/netcoreapp3.1/PromotionMain.pdb
+/home/avinash/code/project1/Promotion/PromotionMain/obj/Debug/netcoreapp3.1/PromotionMain.csprojAssemblyReference.cache
+/home/avinash/code/project1/Promotion/PromotionMain/obj/Debug/netcoreapp3.1/PromotionMain.AssemblyInfoInputs.cache
+/home/avinash/code/project1/Promotion/PromotionMain/obj/Debug/netcoreapp3.1/PromotionMain.AssemblyInfo.cs
+/home/avinash/code/project1/Promotion/PromotionMain/obj/Debug/netcoreapp3.1/PromotionMain.csproj.CoreCompileInputs.cache
+/home/avinash/code/project1/Promotion/PromotionMain/obj/Debug/netcoreapp3.1/PromotionMain.dll
+/home/avinash/code/project1/Promotion/PromotionMain/obj/Debug/netcoreapp3.1/PromotionMain.pdb
+/home/avinash/code/project1/Promotion/PromotionMain/obj/Debug/netcoreapp3.1/PromotionMain.genruntimeconfig.cache
