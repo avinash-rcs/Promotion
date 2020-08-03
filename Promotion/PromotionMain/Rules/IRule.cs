@@ -8,6 +8,6 @@ namespace PromotionMain.Rules
         //Will test if this rule is applicable to items in the cart
         bool IsApplicable(List<char> cart);
 
-        void Apply(List<char> cart);
+        List<char> Apply(List<char> cart);
     }
 }

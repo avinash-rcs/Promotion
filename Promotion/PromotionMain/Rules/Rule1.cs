@@ -20,9 +20,24 @@ namespace PromotionMain.Rules
             return cart.Where(x => x == _skutype).Count()>=n;
         }
 
-        public void Apply(List<char> cart)
+        public List<char> Apply(List<char> cart)
         {
+            if (!IsApplicable(cart)) throw new Exception("Rule applied when not applicable");
+            
+            List<char> newcart = new List<char>();
+            int i=0;
 
+            //Delete required number of items consumed by the rule; return the rest;
+            foreach(var item in cart)
+            {
+                if (item == _skutype && i<n) 
+                {
+                    i++;
+                    continue;
+                }
+                newcart.Add(item);
+            }
+            return newcart;
         }
     }
 }
