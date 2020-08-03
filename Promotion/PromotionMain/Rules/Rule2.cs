@@ -37,7 +37,7 @@ namespace PromotionMain.Rules
                     found1=true;
                     continue;
                 }
-                if (item == _skutype1 && !found2) 
+                if (item == _skutype2 && !found2) 
                 {
                     found2=true;
                     continue;
