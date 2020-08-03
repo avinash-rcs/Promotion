@@ -17,7 +17,7 @@ namespace Promotion.Tests
             mycart.Add('A');
             mycart.Add('A');
 
-            PromotionMain.Rules.IRule rule1 = new PromotionMain.Rules.Rule1('A',3);
+            PromotionMain.Rules.IRule rule1 = new PromotionMain.Rules.Rule1('A',3,0);
             Assert.True(rule1.IsApplicable(mycart));
         }
 
@@ -28,7 +28,7 @@ namespace Promotion.Tests
             mycart.Add('A');
             mycart.Add('A');
 
-            PromotionMain.Rules.IRule rule1 = new PromotionMain.Rules.Rule1('A',3);
+            PromotionMain.Rules.IRule rule1 = new PromotionMain.Rules.Rule1('A',3,0);
             Assert.False(rule1.IsApplicable(mycart));
         }
 
@@ -44,7 +44,7 @@ namespace Promotion.Tests
             mycart.Add('A');
             mycart.Add('A');
 
-            PromotionMain.Rules.IRule rule1 = new PromotionMain.Rules.Rule1('A',3);
+            PromotionMain.Rules.IRule rule1 = new PromotionMain.Rules.Rule1('A',3,0);
             Assert.True(rule1.IsApplicable(mycart));
         }
 
@@ -59,9 +59,8 @@ namespace Promotion.Tests
             mycart.Add('A');
             mycart.Add('A');
 
-            PromotionMain.Rules.IRule rule1 = new PromotionMain.Rules.Rule1('A',3);
+            PromotionMain.Rules.IRule rule1 = new PromotionMain.Rules.Rule1('A',3,0);
             Assert.Equal(3,rule1.Apply(mycart).Count);
         }
-
     }
 }
